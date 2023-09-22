@@ -29,11 +29,20 @@ const {
 
 const { author }= details
 
-console.log('volume:', volume);
+/* console.log('volume:', volume);
 console.log('details:', details);
 console.log({author});
-console.log({year});
+console.log({year}); */
 
+///desestructuracion arreglos
+
+const dbz:string[] = ['Goku','vegeta','Trunks']
+
+const [p1,p2,p3,p4 = 'not found']:string[] = dbz
+
+console.log('personaje 3 :', dbz[3] || 'No hay personaje');
+console.log({p1});
+console.log({p4});
 
 
 
